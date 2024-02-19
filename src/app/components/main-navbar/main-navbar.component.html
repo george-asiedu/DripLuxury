@@ -1,0 +1,34 @@
+<header 
+    class="overflow-hidden fixed top-0 flex items-center bg-white shadow-md w-full h-[70px] px-[8%] lg:px-[6%] justify-between"
+>
+    <h1 class="text-midnight text-xl lg:text-2xl font-bold cursor-pointer" routerLink="/">DripLuxury</h1>
+
+    <nav class="hidden lg:block">
+        <a routerLink="/" class="px-[16px] py-[10px] text-gray hover:text-midnight" routerLinkActive="active">Shop</a>
+        <a routerLink="/men" class="px-[16px] py-[10px] text-gray hover:text-midnight">Men</a>
+        <a routerLink="/women" class="px-[16px] py-[10px] text-gray hover:text-midnight">Women</a>
+        <a routerLink="/Sneakers" class="px-[16px] py-[10px] text-gray hover:text-midnight">Sneakers</a>
+        <a routerLink="/accessories" class="px-[16px] py-[10px] text-gray hover:text-midnight">Accesseries</a>
+    </nav>
+
+    <div class="hidden lg:flex items-center gap-3 border-none w-[200px] h-[32px] rounded-[8px] px-[12px] cursor-pointer focus-within:border-primary bg-lightGrey">
+        <img src="../../../assets/search.svg" alt="search-icon">
+        <input 
+            type="text"
+            class="w-full border-none focus:outline-none caret-primary placeholder:italic placeholder:text-sm bg-lightGrey"
+            placeholder="Search"
+        >
+    </div>
+
+    <div class="lg:flex items-center gap-3 hidden">
+        <div class="bg-lightGrey w-[35px] h-[33px] border-none rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-secondary">
+            <img src="../../../assets/heart.svg" alt="heart-icon">
+        </div>
+        <div class="bg-lightGrey w-[35px] h-[33px] border-none rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-secondary">
+            <img src="../../../assets/user.svg" alt="user-icon">
+        </div>
+        <div class="bg-lightGrey w-[35px] h-[33px] border-none rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-secondary">
+            <img src="../../../assets/shopping cart.svg" alt="cart-icon">
+        </div>
+    </div>
+</header>
