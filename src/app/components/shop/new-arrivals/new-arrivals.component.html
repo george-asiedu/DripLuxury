@@ -9,9 +9,9 @@
         <p class="text-primary text-center tracking-wider">Loading... please wait</p>
     }
 
-    <div class="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div class="w-full grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8 md:gap-4">
         @for (product of products; track product.id) {
-            <div class="flex flex-col gap-6 rounde-[8px] cursor-pointer hover:shadow-lg">
+            <div class="flex flex-col gap-4 md:gap-3 rounde-[8px] cursor-pointer hover:shadow-lg">
                 <img [src]="product.featuredImage.url" alt="product.title" class="rounded-[8px]">
                 <div class="flex items-center justify-between p-[10px]">
                     <h4 class="text-midnight font-medium tracking-wide">{{ product.title }}</h4>
