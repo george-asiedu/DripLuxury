@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/internal/operators/map';
+import { Products } from '../model/products';
 
 @Injectable({
   providedIn: 'root'
@@ -11,10 +12,10 @@ export class ProductsService {
 
   constructor(private http: HttpClient) { }
 
-  getProducts(): Observable<any> {
+  getProducts(limit: number): Observable<Products> {
     const query = `
       {
-        products(first: 20) {
+        products(first: ${limit}) {
           edges {
             node {
               id
